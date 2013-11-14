@@ -18,6 +18,7 @@ class WhatCraic < Sinatra::Base
 
   get '/ham' do
     erb :ham
+  end
 
   get '/abdi' do
     erb :abdi
