@@ -1,19 +1,40 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('/fonts/Lato.ttf');
+}
+
 body {
-	background-image:url('http://images.sodahead.com/slideshows/000002579/peace-sign-26930390441_xlarge.jpeg');
+	background-image:url('/images/homebg.jpg');
 	color:blue;
+	font-family: 'Lato';
 }
 
 h1 {
 	color:black;
 	text-align:center;
+	font-size: 80;
 }
 
 li {
 	color:green;
-	text-align:right;
+	text-align:center;
 }
 
 p {
 	color:red;
-	text-align:justify;
+	text-align:center;
+}
+
+h2 {
+	color: #7D0000;
+	font-size: 64;
+	text-align: center;
+}
+
+#main {
+	opacity: 0;
+}
+
+#the_key {
+	font-size: 64;
 }
