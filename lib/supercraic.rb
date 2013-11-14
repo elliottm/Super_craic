@@ -1,8 +1,15 @@
 require 'sinatra/base'
 
 class WhatCraic < Sinatra::Base
+
+set :views, File.join(File.dirname(__FILE__), '..', 'views')
+
   get '/' do
-    'Hello WhatCraic!'
+    erb :index 
+  end
+
+  get '/mark' do
+  	erb :mark	
   end
 
   # start the server if ruby file executed directly
