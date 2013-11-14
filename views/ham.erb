@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Craic</title>
+  <link rel="stylesheet" type="text/css" href="/ham.css"> 
+</head>
+<body>
+	<div id="bg"></div>
+	
+	<img id="dog" src="/images/dog.jpg" width="400" height="300">
+	<input value="Fade that dog" type="submit" id="fade_button">
+	<input value="Toggle that dog" type="submit" id="hide_dog">
+
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="/javascript/ham.js"></script>
+  <script> 
+				$(function() {
+					$( "#fade_button" ).click(function() {
+					  $( "#dog" ).fadeToggle( "slow", "linear" );
+					});  
+					
+					$( "#hide_dog" ).click(function() {
+					  $( "#dog" ).toggle( "slow", function() {
+					  });
+					});			
+				});
+	</script>
+
+</body>
+</html>
