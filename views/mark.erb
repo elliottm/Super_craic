@@ -11,6 +11,12 @@
 
 </head>
 
+<div id="enrique">
+
+	<img src="https://0.gravatar.com/avatar/8e24f63b6d48327d13495b2f7c24639f?d=https%3A%2F%2Fidenticons.github.com%2Ffe848d949e9f64777d3b482efedff108.png&r=x&s=440">
+
+</div>
+
 <body>
 	<p>Click me dick</p>
 	<p>Click me dick</p>
@@ -30,6 +36,7 @@
 </div>
 
 
+
 <!-- 1. Link to jQuery (1.8 or later), -->
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> <!-- 33 KB -->
 
@@ -42,18 +49,28 @@
 
 <script> 
 
-slide();
+
+$(document).ready(function () {
+
+    $('body').on('keydown keyup',function(r){
+      var color = r.type=="keydown" ? 'red' : 'white' ;
+      if(r.which==82){
+          $("#enrique").animate({opacity: 1}, 3000); 
+      }
+    });
+
+ slide();
 
 $('#append').on('click', function() {
 	homepage();
 });
 
-	
+});
 
 </script>
 
 <!-- 15 KB -->
-
+<!-- https://0.gravatar.com/avatar/8e24f63b6d48327d13495b2f7c24639f?d=https%3A%2F%2Fidenticons.github.com%2Ffe848d949e9f64777d3b482efedff108.png&r=x&s=440 -->
 <!-- 2. Add images to <div class="fotorama"></div>. -->
 
 
