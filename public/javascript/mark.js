@@ -4,3 +4,11 @@ function slide() {
   $( this ).slideUp();
 });
 };
+
+function homepage() {
+
+$.get('/', function(data) {
+        $(data).appendTo("#mainpage")
+        });
+
+}
