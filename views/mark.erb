@@ -1,30 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>What the F()CK?</title>
+  <style>
+  div {
+    background-image:url('http://t2.gstatic.com/images?q=tbn:ANd9GcQHKr2yUCLEKTfMXGniooP8l3E0rUiqhlvur5G3jukdpIZ2IG8f');
+    margin: 3px;
+    width: 180px;
+    height: 240px;
+    display: none;
+    float: left;
+  }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+ 
+<a id="clickme">Click me!</a>
+
+<div></div>
+<div></div>
+<div></div>
+ 
+<script>
+$( '#clickme' ).click(function () {
+  if ( $( "div:first" ).is( ":hidden" ) ) {
+    $( "div" ).slideDown( "slow" );
+  } else {
+    $( "div" ).hide();
+  }
+});
+</script>
+ 
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Super Craic</title>
   <link rel="stylesheet" type="text/css" href="/application.css"> 
+
+  <style>
+
+  </style>
+
 </head>
 <body>
-	
-	<div id='clickme'>
-		Click here douche
-	</div>
 
-	<img id="hot" src="http://t2.gstatic.com/images?q=tbn:ANd9GcQHKr2yUCLEKTfMXGniooP8l3E0rUiqhlvur5G3jukdpIZ2IG8f" width="100" height="123">
+<div id="clickme">
+  <a href="" <img id="hot" src="http://t2.gstatic.com/images?q=tbn:ANd9GcQHKr2yUCLEKTfMXGniooP8l3E0rUiqhlvur5G3jukdpIZ2IG8f" width="100" height="123" alt="">Click here</a>
+</div>
+
+
 
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="/javascript/mark.js">
 
 $( "#clickme" ).click(function() {
-	if ( $("#hot").is(":hidden") ) {
-		$("#hot").slideDown("slow");
-	} else {
-		$("#hot").hide();
-	}
-});
-
+	$( "#hot" ).slideDown("slow");
+};
 
   </script>
 
 </body>
-</html>
+</html> -->
